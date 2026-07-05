@@ -1,16 +1,16 @@
-#CarWash & Café El Punto
+# CarWash & Café El Punto
 
 > Sistema integral de gestión para centro de lavado automotriz con área de cafetería — Proyecto final de **Seminario de Proyecto I (ISW410)**, UAPA, trimestre Mayo–Julio 2026.
 
 ---
 
-##Nombre del proyecto
+## Nombre del proyecto
 
 **CarWash & Café El Punto** — Plataforma informática para la gestión de turnos de lavado y pedidos de cafetería con vista móvil para el cliente final mediante código QR.
 
 ---
 
-##Descripción del sistema
+## Descripción del sistema
 
 CarWash & Café El Punto es un centro de lavado y estética automotriz que integra un área de cafetería climatizada con acceso a internet de alta velocidad. El negocio está soportado por una **plataforma informática propia** que digitaliza el ciclo completo del servicio:
 
@@ -30,7 +30,7 @@ La plataforma se compone de dos entornos:
 
 ---
 
-##Objetivo
+## Objetivo
 
 ### Objetivo general
 
@@ -47,7 +47,7 @@ Desarrollar e implementar una plataforma informática integral para la gestión 
 
 ---
 
-##Tecnologías utilizadas
+## Tecnologías utilizadas
 
 ### Backend
 
@@ -86,7 +86,7 @@ Desarrollar e implementar una plataforma informática integral para la gestión 
 
 ---
 
-##Estructura del repositorio
+## Estructura del repositorio
 
 ```
 trabajo-final-seminario-1/
@@ -122,7 +122,7 @@ trabajo-final-seminario-1/
 
 ---
 
-##Instrucciones de instalación y ejecución
+## Instrucciones de instalación y ejecución
 
 ### Requisitos previos
 
@@ -258,7 +258,7 @@ Dashboard actualiza métricas cada 15 s
 
 ---
 
-## 📚 Documentación académica
+## Documentación académica
 
 La documentación del proyecto final (Trabajo Final ISW410) se entrega en formato Markdown en la carpeta [`tareas/`](./tareas/):
 
@@ -280,7 +280,7 @@ La documentación del proyecto final (Trabajo Final ISW410) se entrega en format
 
 ---
 
-##Licencia
+## Licencia
 
 Este proyecto está licenciado bajo la **MIT License** — ver el archivo [`LICENSE`](./LICENSE) para los detalles.
 
@@ -295,7 +295,7 @@ de este software y archivos de documentación asociados...
 
 ---
 
-##Contribuciones
+## Contribuciones
 
 Este es un proyecto académico individual. Las contribuciones externas no son aceptadas en este repositorio.
 

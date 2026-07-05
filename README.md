@@ -1,16 +1,16 @@
-# 🚗☕ CarWash & Café El Punto
+#CarWash & Café El Punto
 
 > Sistema integral de gestión para centro de lavado automotriz con área de cafetería — Proyecto final de **Seminario de Proyecto I (ISW410)**, UAPA, trimestre Mayo–Julio 2026.
 
 ---
 
-## 📌 Nombre del proyecto
+##Nombre del proyecto
 
 **CarWash & Café El Punto** — Plataforma informática para la gestión de turnos de lavado y pedidos de cafetería con vista móvil para el cliente final mediante código QR.
 
 ---
 
-## 📖 Descripción del sistema
+##Descripción del sistema
 
 CarWash & Café El Punto es un centro de lavado y estética automotriz que integra un área de cafetería climatizada con acceso a internet de alta velocidad. El negocio está soportado por una **plataforma informática propia** que digitaliza el ciclo completo del servicio:
 
@@ -30,7 +30,7 @@ La plataforma se compone de dos entornos:
 
 ---
 
-## 🎯 Objetivo
+##Objetivo
 
 ### Objetivo general
 
@@ -47,7 +47,7 @@ Desarrollar e implementar una plataforma informática integral para la gestión 
 
 ---
 
-## 🛠️ Tecnologías utilizadas
+##Tecnologías utilizadas
 
 ### Backend
 
@@ -86,7 +86,7 @@ Desarrollar e implementar una plataforma informática integral para la gestión 
 
 ---
 
-## 📂 Estructura del repositorio
+##Estructura del repositorio
 
 ```
 trabajo-final-seminario-1/
@@ -122,7 +122,7 @@ trabajo-final-seminario-1/
 
 ---
 
-## 🚀 Instrucciones de instalación y ejecución
+##Instrucciones de instalación y ejecución
 
 ### Requisitos previos
 
@@ -166,7 +166,7 @@ JWT_SECRET=cambia-esto-por-una-cadena-aleatoria-larga
 FRONTEND_URL=http://localhost:5174
 ```
 
-> ⚠️ Si no defines `JWT_SECRET`, el backend usa uno por defecto (solo válido para desarrollo).
+> Si no defines `JWT_SECRET`, el backend usa uno por defecto (solo válido para desarrollo).
 
 ### 4. Arrancar en modo desarrollo
 
@@ -191,7 +191,7 @@ El sistema crea automáticamente un usuario administrador al primer arranque:
 |-------|-----------|-----|
 | `admin@carwash.com` | `admin123` | admin |
 
-> ⚠️ **Cambia esta contraseña antes de cualquier despliegue real.**
+> **Cambia esta contraseña antes de cualquier despliegue real.**
 
 ### 6. Verificar la instalación
 
@@ -217,7 +217,7 @@ El bundle optimizado queda en `frontend/dist/`.
 
 ---
 
-## 📸 Capturas de pantalla
+## Capturas de pantalla
 
 Las capturas de evidencia funcional del proyecto se encuentran en [`docs/screenshots/`](./docs/screenshots/).
 
@@ -225,7 +225,7 @@ Cada captura está documentada con su URL, descripción y rol que la utiliza. Ve
 
 ---
 
-## ✅ Evidencia funcional
+## Evidencia funcional
 
 La evidencia de que el sistema funciona se compone de:
 
@@ -271,17 +271,16 @@ La documentación del proyecto final (Trabajo Final ISW410) se entrega en format
 
 ---
 
-## 👤 Autor
+## Autor
 
 **Raymi German** — Matrícula 100048833
-**Asignatura:** Seminario de Proyecto I (ISW410)
-**Docente:** Ing. Henry Candelario
+**Asignatura:** Seminario de Proyecto I
 **Universidad:** UAPA — Escuela de Ingeniería y Tecnología
 **Trimestre:** Mayo–Julio 2026
 
 ---
 
-## 📄 Licencia
+##Licencia
 
 Este proyecto está licenciado bajo la **MIT License** — ver el archivo [`LICENSE`](./LICENSE) para los detalles.
 
@@ -296,7 +295,7 @@ de este software y archivos de documentación asociados...
 
 ---
 
-## 🤝 Contribuciones
+##Contribuciones
 
 Este es un proyecto académico individual. Las contribuciones externas no son aceptadas en este repositorio.
 

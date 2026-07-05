@@ -100,6 +100,12 @@ uploads/
 public/uploads/
 
 # ============================================================
+# Documentación académica local (se entrega por la plataforma UAPA,
+# no forma parte del repositorio de código)
+# ============================================================
+tareas/
+
+# ============================================================
 # Screenshots placeholder (los reales los pones tú en /docs/screenshots/)
 # ============================================================
 docs/screenshots/*.tmp

@@ -1,0 +1,227 @@
+FASE DE ANÁLISIS
+CarWash & Café El Punto
+Formación de Empresas de Base Tecnológica - UAPA
+Estudiante: Raymi German - Matrícula: 100048833
+
+===============================================================================
+1. DESCRIPCIÓN DEL PROYECTO
+===============================================================================
+
+CarWash & Café El Punto es un centro de lavado y estética automotriz que
+integra un área de cafetería climatizada con acceso a internet de alta
+velocidad. El proyecto resuelve el problema de la pérdida de tiempo improductiva
+que sufren los dueños de vehículos en los centros de lavado tradicionales,
+donde deben esperar entre 45 minutos y 2 horas en espacios incómodos. Con esta
+propuesta, ese tiempo muerto se transforma en un momento productivo o de
+descanso.
+
+===============================================================================
+2. OBJETIVO DEL PROYECTO
+===============================================================================
+
+El proyecto se plantea un Objetivo de Servicio. A corto y mediano plazo (6
+meses), busca posicionarse en la zona como el centro de lavado preferido gracias
+a la calidad de su atención, la rapidez del servicio y la comodidad de sus
+instalaciones, logrando un flujo constante de clientes recurrentes y su
+fidelización.
+
+===============================================================================
+3. TIPO DE PROYECTO
+===============================================================================
+
+Comercial y de Servicios.
+
+===============================================================================
+4. PROBLEMA REAL A RESOLVER
+===============================================================================
+
+Los dueños de vehículos pierden entre 45 minutos y 2 horas esperando en centros
+de lavado tradicionales, en espacios ruidosos o calurosos, sin poder aprovechar
+ese tiempo. Este proyecto transforma ese tiempo muerto en un momento productivo
+o de descanso, eliminando el estrés de la espera.
+
+===============================================================================
+5. FUENTES DE RETROALIMENTACIÓN
+===============================================================================
+
+5.1 Clientes Finales
+--------------------
+Fuente principal para validar la experiencia de usuario. A través de encuestas
+breves y entrevistas en la zona, se obtendrá información sobre preferencias de
+consumo, expectativas de tiempo de espera y valoración de herramientas digitales.
+
+5.2 Personal Operativo
+----------------------
+Retroalimentación técnica sobre el día a día: asignación de turnos de lavado,
+gestión de pedidos de cafetería y funciones del sistema informático.
+
+5.3 Asesores Académicos UAPA
+----------------------------
+Validación metodológica, técnica y de negocio, asegurando que el software
+cumpla con las buenas prácticas de ingeniería de software y gestión de proyectos.
+
+===============================================================================
+6. ENTORNO DEL SISTEMA
+===============================================================================
+
+El proyecto opera en un entorno híbrido basado en la nube:
+
+- Entorno Web: Sistema administrativo central, módulo del cajero y pantalla de
+  pedidos de la cafetería. Permite al administrador gestionar el negocio desde
+  cualquier lugar.
+
+- Entorno Móvil: Interfaz para el cliente final mediante código QR en la mesa.
+  Visualización del menú, realización de pedidos y consulta del estatus del
+  lavado en tiempo real, sin necesidad de descargar una aplicación.
+
+===============================================================================
+7. METODOLOGÍA DE DESARROLLO
+===============================================================================
+
+Se aplica la metodología Scrum:
+
+División del desarrollo en ciclos cortos llamados Sprints. Al inicio de cada
+Sprint se seleccionan las tareas prioritarias y al final se presenta un
+incremento de software funcional. Se mantiene un tablero de control con
+reuniones de sincronización semanales para evaluar avances y reasignar
+prioridades.
+
+===============================================================================
+8. HERRAMIENTAS DE PLANIFICACIÓN
+===============================================================================
+
+- Trello/Jira: Tablero visual Scrum con columnas: Por hacer, En proceso,
+  En pruebas, Terminado.
+- Notion: Repositorio central de documentación, requisitos, historias de
+  usuario y minutas.
+- GitHub: Control de versiones del código fuente con evidencia del desarrollo
+  continuo.
+
+===============================================================================
+9. STACK TECNOLÓGICO
+===============================================================================
+
+- Backend: Node.js con Express, base de datos SQLite (better-sqlite3).
+- Frontend: React con Vite, Tailwind CSS v4, React Router DOM.
+- Autenticación: JWT (JSON Web Tokens).
+- QR: Librería qrcode para generación de códigos.
+
+===============================================================================
+10. MÓDULOS DEL SISTEMA
+===============================================================================
+
+10.1 Autenticación y Usuarios
+-----------------------------
+Login con JWT. Roles: admin, cashier (cajero), barista. Permite registrar
+nuevos usuarios.
+
+10.2 Gestión de Servicios de Lavado
+-----------------------------------
+CRUD de servicios: nombre, descripción, precio, duración. Los servicios se
+pueden activar/desactivar.
+
+10.3 Gestión de Menú de Cafetería
+----------------------------------
+CRUD de items del menú categorizados en: bebidas, comidas, postres, otros.
+Control de disponibilidad.
+
+10.4 Gestión de Turnos de Lavado
+---------------------------------
+Registro de vehículos y clientes. Asignación de servicio. Generación de código
+QR único por turno. Cambio de estados: pendiente, en progreso, completado,
+cancelado.
+
+10.5 Pedidos de Cafetería
+-------------------------
+Los clientes realizan pedidos desde su teléfono vía QR. El barista gestiona
+los estados: pendiente, preparando, listo, entregado. Actualización en tiempo
+real cada 10 segundos.
+
+10.6 Facturación
+----------------
+Factura automática al completar un turno. Incluye servicio de lavado + consumo
+de cafetería + ITBIS 18%. Estados: pendiente, pagado, anulado. Métodos de pago:
+efectivo, tarjeta, transferencia.
+
+10.7 Dashboard
+--------------
+Panel de control con tarjetas de resumen: turnos pendientes, en progreso,
+pedidos activos, ingresos del día (pagados y pendientes). Tabla de últimos
+turnos registrados.
+
+===============================================================================
+11. BASE DE DATOS
+===============================================================================
+
+Base de datos SQLite con las siguientes tablas:
+
+- users         - Usuarios del sistema (admin, cashier, barista)
+- vehicles      - Vehículos registrados
+- services      - Servicios de lavado
+- menu_items    - Items del menú de cafetería
+- wash_turns    - Turnos de lavado con QR token
+- cafe_orders   - Pedidos de cafetería
+- order_items   - Items de cada pedido
+- invoices      - Facturación con ITBIS
+
+===============================================================================
+12. DATOS DE PRUEBA (SEED)
+===============================================================================
+
+- Usuario administrador: admin@carwash.com / admin123
+- Servicios de lavado: Básico (RD$350), Completo (RD$600), Premium (RD$900),
+  Motor (RD$500)
+- Menú de cafetería: 11 items entre bebidas, comidas y postres
+
+===============================================================================
+13. CRONOGRAMA DE 12 SEMANAS
+===============================================================================
+
++-------------------+----------+--------------------------------------------+--------------+
+| Fase              | Semanas  | Actividades                                | Estado       |
++-------------------+----------+--------------------------------------------+--------------+
+| Análisis          | 1-2      | Levantamiento de requisitos, definición    | COMPLETADO   |
+|                   |          | del proyecto                               |              |
++-------------------+----------+--------------------------------------------+--------------+
+| Diseño            | 3-4      | BD, mockups, prototipos                    | COMPLETADO   |
++-------------------+----------+--------------------------------------------+--------------+
+| Desarrollo        | 5-9      | Backend + Frontend + API + QR              | COMPLETADO   |
++-------------------+----------+--------------------------------------------+--------------+
+| Pruebas           | 10       | Pruebas de integración y corrección        | EN CURSO     |
++-------------------+----------+--------------------------------------------+--------------+
+| Implementación    | 11       | Despliegue en nube, configuración          | PENDIENTE    |
++-------------------+----------+--------------------------------------------+--------------+
+| Entrega Final     | 12       | Documentación y presentación               | PENDIENTE    |
++-------------------+----------+--------------------------------------------+--------------+
+
+===============================================================================
+14. PRESUPUESTO DEL PROYECTO
+===============================================================================
+
++------------------------------------------+------------------+
+| Concepto                                 | Costo (RD$)      |
++------------------------------------------+------------------+
+| Análisis y Diseño UI/UX                  | 30,000           |
+| Programación Backend y BD                | 45,000           |
+| Programación Frontend                    | 40,000           |
+| Servidor en la Nube                      | 3,500            |
+| Dominio Web                              | 1,000            |
+| Licencias y APIs                         | 4,500            |
+| Fase de Pruebas                          | 12,000           |
+| Despliegue y Configuración               | 8,000            |
+| Capacitación del Personal                | 6,000            |
+| Mantenimiento y Soporte (3 meses)        | 15,000           |
+| Imprevistos                              | 16,500           |
++------------------------------------------+------------------+
+| TOTAL                                    | RD$181,500       |
++------------------------------------------+------------------+
+
+===============================================================================
+15. PRÓXIMOS PASOS
+===============================================================================
+
+1. Completar fase de pruebas: verificar flujo completo y corregir errores.
+2. Desplegar en servidor cloud (Render / Railway).
+3. Capacitar al personal operativo.
+4. Elaborar manuales de usuario y documentación técnica.
+5. Preparar presentación final del proyecto.

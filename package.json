@@ -1,0 +1,16 @@
+{
+  "name": "proyecto-seminariouno",
+  "version": "1.0.0",
+  "description": "CarWash & Café El Punto",
+  "scripts": {
+    "start": "concurrently --names \"API,WEB\" --prefix-colors \"blue,green\" \"npm start --prefix backend\" \"npm run dev --prefix frontend\"",
+    "dev": "concurrently --names \"API,WEB\" --prefix-colors \"blue,green\" \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "concurrently": "^10.0.3"
+  }
+}
